@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景圖重疊</title>
+    <style>
+        div {
+          width: 200px;
+          height: 150px;
+          border: 1px solid #000;
+          margin: 10px;
+          overflow: hidden;
+          position: relative;
+        }
+        </style>
+        <style>
+        .a img{
+            position: absolute;
+            width: 120px;
+        }
+        .b {
+            
+            background-image:
+            url("sky-with-a-beautiful-sunset-a-blue-and-orange-sky-with-soft-clouds-a-sky-background-photo.jpg"),
+            url("19626_ext_01_en_0_L.jpg");
+            
+            background-size: 60px, 50px;
+            background-repeat: space, round;
+            
+        }
+        img {width: 120px;}
+        .a {
+            border: 10px solid #000;
+            padding: 10px;
+            background: red;
+        }
+        .a {
+            border: 20px dashed #00f5;
+            padding: 5px;
+            background: #ff0;
+        }
+        .c {
+            border: 5px double #000;
+            padding: 5px;
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <img src="sky-with-a-beautiful-sunset-a-blue-and-orange-sky-with-soft-clouds-a-sky-background-photo.jpg">
+        <img src="19626_ext_01_en_0_L.jpg">
+        
+    </div>
+    <div class="b"></div>
+       
+</body>
+</html>
